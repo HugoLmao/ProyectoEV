@@ -1,0 +1,312 @@
+#VRML V2.0 utf8
+DEF cultivo Transform{        
+    children[    
+        DEF cuboTronco Transform{
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "Tronco.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 10 9.5 10
+                    }
+                }
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "Tronco2.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 9.9 10 9.9
+                    }
+                }
+            ]	
+        }
+        Transform{
+            translation 10 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 20 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -10 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -20 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 10 0 80
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 20 0 80
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 0 0 80
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -10 0 80
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -20 0 80
+            children[USE cuboTronco]
+        }
+
+        #
+
+        Transform{
+            translation -30 0 10
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 20
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 30
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 40
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 50
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 60
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 70
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 80
+            children[USE cuboTronco]
+        }
+
+        Transform{
+            translation 30 0 10
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 20
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 30
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 40
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 50
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 60
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 70
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 80
+            children[USE cuboTronco]
+        }
+
+        #Tierra
+        DEF tierraCultivo Transform{
+            translation 20 0 10
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "Cultivo.jpeg"
+                        }
+                    }    
+                    geometry Box{
+                        size 10 10 10
+                    }
+                }
+            ]
+        }
+
+        Transform{
+            translation 0 0 10
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 20
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 30
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 40
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 50
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 60
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 0
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 10
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 20
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 30
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 40
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 50
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 60
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 10
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 20
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 30
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 40
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 50
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 60
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 0
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 0
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 10
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 20
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 30
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 40
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 50
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 60
+            children[USE tierraCultivo]
+        }
+
+        #agua
+
+        DEF agua Transform{
+            translation 0 0 10
+            children[
+                Shape{
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 0 0 1
+                            emissiveColor 0 0 1
+                            specularColor 0 0 1
+                        }
+                    }
+                    geometry Box{
+                        size 10 10 10
+                    }
+                }
+            ]
+        }
+
+        Transform{
+            translation 0 0 10
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 20
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 30
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 40
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 50
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 60
+            children[USE agua]
+        }
+    ]
+}        

@@ -1,0 +1,1259 @@
+#VRML V2.0 utf8
+#Fondos
+Background{
+    frontUrl "sides.jpg"
+    backUrl "sides.jpg"
+    leftUrl "sides.jpg"
+    rightUrl "sides.jpg"
+    topUrl "up.jpg"
+    bottomUrl "grass2.jpg"
+}
+
+#Suelo
+
+Transform{
+    translation 0 -5 0    
+    children[    
+        Shape{
+            appearance Appearance{
+                texture ImageTexture{
+                    url "grass2.jpg"
+                }
+            }
+            geometry Box{
+               size 500 5 500
+            }
+        }
+    ]
+}
+#Casa clasica
+#1
+DEF casa Transform{
+    children[    
+        DEF CuboStone Shape{
+            appearance Appearance{
+                        texture ImageTexture{
+                            url "Stone.jpg"
+                        }
+            }
+            geometry Box{
+                size 10 10 10
+            }
+        }
+        Transform{
+            translation -10 0 0
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 10 0 0
+            children[USE CuboStone]
+        }
+
+        DEF CuboTronco Transform{    
+                translation -20 0 0
+                children[
+                    Shape{
+                        appearance Appearance{
+                            texture ImageTexture{
+                                url "Tronco.jpg"
+                            }
+                        }
+                        geometry Box{
+                            size 10 9.5 10
+                        }
+                    }
+                    Shape{
+                        appearance Appearance{
+                            texture ImageTexture{
+                                url "Tronco2.jpg"
+                            }
+                        }
+                        geometry Box{
+                            size 9.9 10 9.9
+                        }
+                    }
+                ]
+        }
+        Transform{
+            translation 40 0 0
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 40 0 40
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 0 0 40
+            children[USE CuboTronco]
+        }
+
+        Transform{
+            translation 20 0 10
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 20 0 20
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 20 0 30
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 0 10
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 0 20
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 0 30
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 10 0 40
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -10 0 40
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 0 0 40
+            children[USE CuboStone]
+        }
+
+        DEF CuboMadera Transform{
+            translation 0 0 10
+            children[
+                Shape{
+                    appearance Appearance{
+                                texture ImageTexture{
+                                    url "madera.jpg"
+                                }
+                            }
+                            geometry Box{
+                                size 10 10 10
+                            }
+                }
+            ]
+        }
+
+        Transform{
+            translation 10 0 0
+            children[USE CuboMadera]
+        }
+        Transform{
+            translation -10 0 0
+            children[USE CuboMadera]
+        }
+        Transform{
+            translation 0 0 10
+            children[USE CuboMadera]
+        }
+        Transform{
+            translation -10 0 10
+            children[USE CuboMadera]
+        }
+        Transform{
+            translation 10 0 10
+            children[USE CuboMadera]
+        }
+        Transform{
+            translation 0 0 20
+            children[USE CuboMadera]
+        }
+        Transform{
+            translation -10 0 20
+            children[USE CuboMadera]
+        }
+        Transform{
+            translation 10 0 20
+            children[USE CuboMadera]
+        }
+
+        DEF cama Transform{
+            translation 10 5 22.5
+            children[
+                Shape{
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 0.85 0 0
+                            shininess 0.6
+                        }
+                    }
+                    geometry Box{
+                        size 10 5 15
+                    } 
+                }
+                Transform{
+                    translation 0 0 10
+                    children[
+                        Shape{
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 1 1 1
+                                    shininess 0.6
+                                }
+                            }
+                            geometry Box{
+                                size 10 5 5
+                                } 
+                            }
+                        ]
+                }
+            ]
+        }
+
+        DEF puerta Transform{
+            translation 0 15 0
+            children[
+                Shape{
+                    appearance Appearance{
+                                texture ImageTexture{
+                                    url "puerta.jpg"
+                                }
+                            }
+                            geometry Box{
+                                size 10 20 2
+                            }
+                }
+            ]
+        }	
+
+        DEF escalera Transform{
+            translation 0 0 -10
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "madera.jpg"
+                        }    
+                    }
+                    geometry Box{
+                        size 10 5 10
+                    }
+                }
+                Transform{
+                    translation 0 0 5
+                    children[
+                        Shape{
+                            appearance Appearance{
+                                texture ImageTexture{
+                                    url "madera.jpg"
+                                }
+                            }
+                            geometry Box{
+                                size 10 10 5
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        #2
+
+        Transform{
+            translation 40 10 0
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 40 10 40
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 0 10 40
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 0 10 0
+            children[USE CuboTronco]
+        }
+
+        Transform{
+            translation -10 10 0
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 10 10 0
+            children[USE CuboStone]
+        }
+
+        Transform{
+            translation 20 10 10
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 20 10 20
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 20 10 30
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 10 10
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 10 20
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 10 30
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 10 10 40
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -10 10 40
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 0 10 40
+            children[USE CuboStone]
+        }
+
+        #3
+
+        Transform{
+            translation 40 20 0
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 40 20 40
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 0 20 40
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 0 20 0
+            children[USE CuboTronco]
+        }
+
+        Transform{
+            translation -10 20 0
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 10 20 0
+            children[USE CuboStone]
+        }
+
+        Transform{
+            translation 20 20 10
+            children[USE CuboStone]
+        }
+        DEF CuboGlass Transform{
+            translation 20 20 20
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "glass.png"
+                        }
+                    }
+                    geometry Box{
+                        size 10 10 10
+                    }
+                }    
+            ]
+        }
+        Transform{
+            translation 20 20 30
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 20 10
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -40 0 0
+            children[USE CuboGlass]
+        }
+        Transform{
+            translation -20 20 30
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 10 20 40
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -10 20 40
+            children[USE CuboStone]
+        }
+
+        Transform{
+            translation 0 20 40
+            children[USE CuboStone]
+        }
+
+        #4
+
+        Transform{
+            translation 40 30 0
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 40 30 40
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 0 30 40
+            children[USE CuboTronco]
+        }
+        Transform{
+            translation 0 30 0
+            children[USE CuboTronco]
+        }
+
+        Transform{
+            translation -10 30 0
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 10 30 0
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 0 30 0
+            children[USE CuboStone]
+        }
+
+        Transform{
+            translation 20 30 10
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 20 30 20
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 20 30 30
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 30 10
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 30 20
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -20 30 30
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 10 30 40
+            children[USE CuboStone]
+        }
+        Transform{
+            translation -10 30 40
+            children[USE CuboStone]
+        }
+        Transform{
+            translation 0 30 40
+            children[USE CuboStone]
+        }
+
+        #techo
+
+        Transform{
+            translation 0 35 20
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "madera.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 70 5 70
+                    }
+                }
+            ]
+        }
+        Transform{
+            translation 0 40 20
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "madera.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 52.5 5 52.5
+                    }
+                }
+            ]
+        }
+        Transform{
+            translation 0 45 20
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "madera.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 35 5 35
+                    }
+                }
+            ]
+        }
+        Transform{
+            translation 0 50 20
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "madera.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 17.5 5 17.5
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+Transform{
+    translation 200 0 200
+    rotation 0 1 0 1.571
+    children[USE casa]
+}
+Transform{
+    translation 100 0 -180
+    rotation 0 1 0 1.571
+    children[USE casa]
+}
+Transform{
+    translation -200 0 -150
+    rotation 0 1 0 3.14519
+    children[USE casa]
+}
+Transform{
+    translation -200 0 200
+    rotation 0 1 0 -1.571
+    children[USE casa]
+}
+Transform{
+    translation 150 0 30
+    rotation 0 1 0 1.571
+    children[USE casa]
+}
+Transform{
+    translation -150 0 10
+    children[USE casa]
+}
+Transform{
+    translation -10 0 170
+    rotation 0 1 0 1.517
+    children[USE casa]
+}
+
+#Cultivos
+
+DEF cultivo Transform{ 
+    translation -90 0 -160
+    rotation 0 1 0 1.571
+    children[    
+        DEF cuboTronco Transform{
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "Tronco.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 10 9.5 10
+                    }
+                }
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "Tronco2.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 9.9 10 9.9
+                    }
+                }
+            ]	
+        }
+        Transform{
+            translation 10 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 20 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -10 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -20 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 0
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 10 0 80
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 20 0 80
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 0 0 80
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -10 0 80
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -20 0 80
+            children[USE cuboTronco]
+        }
+
+        #
+
+        Transform{
+            translation -30 0 10
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 20
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 30
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 40
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 50
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 60
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 70
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation -30 0 80
+            children[USE cuboTronco]
+        }
+
+        Transform{
+            translation 30 0 10
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 20
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 30
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 40
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 50
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 60
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 70
+            children[USE cuboTronco]
+        }
+        Transform{
+            translation 30 0 80
+            children[USE cuboTronco]
+        }
+
+        #Tierra
+        DEF tierraCultivo Transform{
+            translation 20 0 10
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "Cultivo.jpg"
+                        }
+                    }    
+                    geometry Box{
+                        size 10 10 10
+                    }
+                }
+            ]
+        }
+
+        Transform{
+            translation 0 0 10
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 20
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 30
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 40
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 50
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation 0 0 60
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 0
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 10
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 20
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 30
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 40
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 50
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -10 0 60
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 10
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 20
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 30
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 40
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 50
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 60
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -30 0 0
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 0
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 10
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 20
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 30
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 40
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 50
+            children[USE tierraCultivo]
+        }
+        Transform{
+            translation -40 0 60
+            children[USE tierraCultivo]
+        }
+
+        #agua
+
+        DEF agua Transform{
+            translation 0 0 10
+            children[
+                Shape{
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 0 0 1
+                            emissiveColor 0 0 1
+                            specularColor 0 0 1
+                        }
+                    }
+                    geometry Box{
+                        size 10 10 10
+                    }
+                }
+            ]
+        }
+
+        Transform{
+            translation 0 0 10
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 20
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 30
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 40
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 50
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 60
+            children[USE agua]
+        }
+    ]
+}        
+
+Transform{
+    translation -130 0 300
+    children[USE cultivo]
+}
+
+#Pozos
+
+#VRML V2.0 utf8 
+DEF pozo Transform{
+    translation 90 0 -80
+    children[
+        DEF cuboStone Shape{
+            appearance Appearance{
+                        texture ImageTexture{
+                            url "Stone.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 10 10 10
+                    }
+        }
+        #base
+        Transform{
+            translation 10 0 0
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 20 0 0
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 0 0
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 0 0
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -30 0 0
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation 20 0 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 20 0 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 20 0 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 20 0 40
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 20 0 50
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation -30 0 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -30 0 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -30 0 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -30 0 40
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -30 0 50
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation 10 0 50
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 0 0 50
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 0 50
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 0 50
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -30 0 50
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation 0 0 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 0 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 0 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 0 10
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation 10 0 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 0 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 0 40
+            children[USE cuboStone]
+        }
+        #
+
+        Transform{
+            translation -20 0 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 0 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 0 40
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation 0 0 40
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 0 40
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation 0 10 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 10 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 10 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 10 10
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation 10 10 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 10 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 10 40
+            children[USE cuboStone]
+        }
+        #
+
+        Transform{
+            translation -20 10 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 10 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 10 40
+            children[USE cuboStone]
+        }
+        #
+        Transform{
+            translation 0 10 40
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 10 40
+            children[USE cuboStone]
+        }
+        #Palos
+        DEF palo Transform{
+            translation 10 20 10
+            children[
+                Shape{
+                    appearance Appearance{
+                        texture ImageTexture{
+                            url "madera.jpg"
+                        }
+                    }
+                    geometry Box{
+                        size 2 10 2
+                    }
+                }    
+            ]
+        }
+
+        Transform{
+            translation 0 0 30
+            children[USE palo]
+        }
+        Transform{
+            translation -30 0 0
+            children[USE palo]
+        }
+        Transform{
+            translation -30 0 30
+            children[USE palo]
+        }
+        Transform{
+            translation 0 10 30
+            children[USE palo]
+        }
+        Transform{
+            translation -30 10 0
+            children[USE palo]
+        }
+        Transform{
+            translation -30 10 30
+            children[USE palo]
+        }
+        Transform{
+            translation 0 10 0
+            children[USE palo]
+        }
+        #techo
+        Transform{
+            translation 10 40 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 40 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 40 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 10 40 40
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 0 40 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 0 40 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 0 40 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation 0 40 40
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 40 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 40 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 40 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -10 40 40
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 40 10
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 40 20
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 40 30
+            children[USE cuboStone]
+        }
+        Transform{
+            translation -20 40 40
+            children[USE cuboStone]
+        }
+
+        #agua
+
+        DEF agua Transform{
+            translation 0 0 20
+            children[
+                Shape{
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 0 0 1
+                                emissiveColor 0 0 1
+                                specularColor 0 0 1
+                        }
+                    }
+                    geometry Box{
+                        size 10 10 10
+                    }
+                }
+            ]
+        }
+
+        Transform{
+            translation -10 0 0
+            children[USE agua]
+        }
+        Transform{
+            translation 0 0 10
+            children[USE agua]
+        }
+        Transform{
+            translation -10 0 10
+            children[USE agua]
+        }
+        Transform{
+            translation 0 10 0
+            children[USE agua]
+        }
+        Transform{
+            translation -10 10 0
+            children[USE agua]
+        }
+        Transform{
+            translation 0 10 10
+            children[USE agua]
+        }
+        Transform{
+            translation -10 10 10
+            children[USE agua]
+        }
+    ]    
+} 
+
+Transform{
+    translation 40 0 190
+    children[USE pozo]
+}

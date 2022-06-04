@@ -1,0 +1,25 @@
+#VRML V2.0 utf8
+DEF CuboMadera Group{
+	children[
+		Shape{
+			appearance Appearance{
+				texture ImageTexture{
+					url "Tronco.jpg"
+				}
+			}
+			geometry Box{
+				size 10 9.5 10
+			}
+		}
+		Shape{
+			appearance Appearance{
+				texture ImageTexture{
+					url "Tronco2.jpg"
+				}
+			}
+			geometry Box{
+				size 9.9 10 9.9
+			}
+		}
+	]	
+}
